@@ -35,8 +35,7 @@ echo "installing sudo"
 apt install sudo
 echo ""
 echo "create $username"
-useradd -m $username
-echo -e "$password/n$password" | passwd $username
+echo -e "$password\n$password\n\n\n\n\n\ny" | adduser $username
 echo ""
 echo "add $username to sudo group"
 usermod -aG sudo $username
