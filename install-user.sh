@@ -21,7 +21,7 @@ read -s password
 echo "confirm password:"
 read -s confirm
 
-if [ $password != $confirm ] then
+if [[ $password != $confirm ]] ; then
 echo "Fail by password not couple"
 exit
 fi
