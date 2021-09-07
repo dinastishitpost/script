@@ -6,10 +6,10 @@ echo ""
 echo "Input yout Username here"
 read username
 
-if [[ ! $username =~ ^[a-z][-a-z0-9_]*\$ ]] 
+if [[ ! $username =~ ^[a-z][-a-z0-9_]*\$ ]] ; then
   echo "Continue using bad username? (Press \"y\" for continue)"
 read confirm
-if [[ ! $confirm =~ ^(y|Y)$ ]] 
+if [[ ! $confirm =~ ^(y|Y)$ ]] ; then
 echo "Fail by bad name!"
 exit
 fi
@@ -49,6 +49,7 @@ echo ""
 echo "creating new start linux"
 echo ""
 
+folder=ubuntu-fs
 bin=ustart.sh
 echo "writing launch script"
 cat > $bin <<- EOM
