@@ -6,10 +6,10 @@ echo ""
 echo "Input yout Username here"
 read username
 
-if [[ ! $username =~ ^[a-z][-a-z0-9_]*\$ ]] then
+if [[ ! $username =~ ^[a-z][-a-z0-9_]*\$ ]] 
   echo "Continue using bad username? (Press \"y\" for continue)"
 read confirm
-if [[ ! $confirm =~ ^(y|Y)$ ]] then
+if [[ ! $confirm =~ ^(y|Y)$ ]] 
 echo "Fail by bad name!"
 exit
 fi
