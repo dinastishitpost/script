@@ -21,7 +21,7 @@ read -s password
 echo "confirm password:"
 read -s confirm
 
-if [ $password != $confirm ]
+if [ "$password" != "$confirm" ]
 then
 echo "Fail by password not couple!"
 exit
@@ -35,7 +35,7 @@ echo "installing sudo"
 apt install sudo
 echo ""
 echo "create $username"
-adduser --password $password $username
+adduser --password $password -m $username
 echo ""
 echo "add $username to sudo group"
 usermod -aG sudo $username
