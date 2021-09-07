@@ -81,7 +81,7 @@ command+=" HOME=/home/$username"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
-command+=" bin/su - billy1 -s /bin/bash"
+command+=" su - $username -s /bin/bash"
 com="\$@"
 if [ -z "\$1" ];then
     exec \$command
