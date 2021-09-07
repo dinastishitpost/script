@@ -4,7 +4,7 @@ echo ""
 echo "welcome to installing user in Ubuntu"
 echo "---------------------------------------"
 echo ""
-echo "Input yout Username here"
+echo "Input your Username here"
 read username
 
 if [[ $username =~ ^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$ ]] ; then
